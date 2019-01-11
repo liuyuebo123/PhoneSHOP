@@ -1,0 +1,230 @@
+/*  顶部区域   */
+div{
+    display: inline-block;
+}
+    .top{
+       height: 66px;
+        width: 100%;
+        background-color: black;
+        box-sizing: border-box;
+}
+    .top_middle{
+        height: 100%;
+        width: 1170px;
+        margin-left: 90px;
+        /*background-color: purple;*/
+
+    }
+    .top_middle_left{
+        width: 195px;
+        height: 56px;
+        /*background-color: green;*/
+    }
+    .top_middle_middle{
+    width: 750px;
+    height: 65px;
+    /*background-color: yellow;*/
+}
+    .top_middle_middle>ul{
+        display: inline-block;
+        width: 750px;
+        height: 56px;
+        list-style: none;
+    }
+    .top_middle_middle>ul>li{
+    width: 83px;
+    height: 56px;
+    float: left;
+    line-height: 56px;
+        color:white;
+}
+    .top_middle_middle>ul>li>a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    .top_middle_right{
+    width: 176px;
+    height: 65px;
+    background-color: red;
+        text-align:center;
+        margin-left: 18px;
+       float: right;
+}
+    .top_middle_right>a{
+        text-decoration: none;
+        font-size: 14px;
+        color:white;
+        line-height: 65px;
+    }
+
+    /*顶部照片*/
+    .top .top_middle .top_middle_left img{
+        width: 140px;
+        height: 50px;
+        margin-top: 6px;
+        display: inline-block;
+    }
+
+/*   中上区域*/
+    .middle{
+        height: 560px;
+        width: 100%;
+        /*background-color: yellow;*/
+    }
+    .middle>ul{
+        width: 8100px;
+        height: 560px;
+        position: relative;
+        animation: sport 20s linear 0s infinite normal;
+        list-style: none;
+        overflow: hidden;
+    }
+    /*制作中上区域的轮播图*/
+    @keyframes sport {
+        from{
+           left: 0px;
+        }
+        to{
+            left:-5396px;
+        }
+    }
+    .middle>ul>li{
+        width: 1349px;
+        height: 560px;
+        float: left;
+    }
+    .middle>ul>li:nth-child(1){
+        background: url("image/lun1.jpg") no-repeat 0 0;
+
+    }
+    .middle>ul>li:nth-child(2){
+        background: url("image/lun2.jpg") no-repeat 0 0;
+
+}
+    .middle>ul>li:nth-child(3){
+        background: url("image/lun3.jpg") no-repeat 0 0;
+
+}
+    .middle>ul>li:nth-child(4){
+    background: url("image/lun4.jpg") no-repeat 0 0;
+
+}
+    .middle>ul>li:nth-child(5){
+    background: url("image/lun1.jpg") no-repeat 0 0;
+
+}
+.middle>ul>li:nth-child(6){
+    background: url("image/lun2.jpg") no-repeat 0 0;
+
+}
+/*   中间区域*/
+    .content{
+        height: 303px;
+        width: 100%;
+        /*background-color: cornflowerblue;*/
+        box-sizing: border-box;
+    }
+    /*中间分三块区域*/
+    .content>ul{
+        height: 294px;
+        width: 1349px;
+        list-style: none;
+        margin-left: 3px;
+        margin-top: 3px;
+
+    }
+    .content>ul>li{
+        float: left;
+        padding-left: 3px;
+        transition: all 2s;
+
+    }
+    .content ul li:hover{
+        opacity: 0.4;
+        transform: scale(0.96,0.96);
+    }
+    .content>ul>li:nth-child(1){
+        height: 294px;
+        width: 443px;
+        background:url("image/zhong1.jpg");
+
+    }
+    .content>ul>li:nth-child(2){
+        height: 294px;
+        width: 443px;
+        background:url("image/zhong2.jpg");
+    }
+    .content>ul>li:nth-child(3){
+        height: 294px;
+        width: 443px;
+        background:url("image/zhong3.jpg");
+  }
+    /*设置图片中的字*/
+    h3 {
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        font-size: 23px;
+        line-height: 294px;
+    }
+/*   中下区域*/
+    .footer{
+        height: 516px;
+        width: 100%;
+        background-color:#efeeeb;
+    }
+    .footer>ul{
+        font-size: 18px;
+        list-style: none;
+        margin-top: 50px;
+    }
+    .footer>ul>li{
+        float: left;
+        margin-left: 130px;
+    }
+    .double{
+        font-size: 13px;
+        list-style: none;
+        padding-top: 10px;
+    }
+    .double>li{
+        padding-top:5px;
+    }
+    .single{
+        margin-top: 15px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: gray;
+    }
+/*   最底部区域*/
+    .deep{
+        height: 238px;
+        width: 100%;
+        background-color: white;
+    }
+    .deep_top{
+        height: 100px;
+        width: 100%;
+        text-align: center;
+    }
+    .deep img{
+        transform: scale(0.7,0.7);
+    }
+    .deep_bottom{
+        height: 100px;
+        width: 100%;
+        text-align: center;
+    }
+    .deep_bottom img{
+        transform: scale(0.4,0.4);
+    }
+    .deep_bottom_left{
+        height: 100px;
+        width: 40px;
+    }
+.deep_bottom_right{
+    height: 100px;
+    width: 40px;
+}
